@@ -1,0 +1,19 @@
+package in.nareshit.raghu.runner;
+
+import org.springframework.boot.CommandLineRunner;
+//import org.springframework.boot.autoconfigure.kafka.KafkaProperties.Producer;
+import org.springframework.stereotype.Component;
+
+import in.nareshit.raghu.model.Product;
+@Component
+public class TestData implements CommandLineRunner {
+
+	@Override
+	public void run(String... args) throws Exception {
+		// TODO Auto-generated method stub
+		Product p=new Product();
+		System.out.println(p);
+
+	}
+
+}
